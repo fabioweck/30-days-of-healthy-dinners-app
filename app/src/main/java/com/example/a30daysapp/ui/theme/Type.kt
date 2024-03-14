@@ -34,7 +34,7 @@ val Typography = Typography(
     bodyLarge = TextStyle(
         fontFamily = RobotoSerif,
         fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
+        fontSize = 12.sp
     ),
     bodyMedium = TextStyle(
         fontFamily = RobotoSerif,
@@ -44,17 +44,17 @@ val Typography = Typography(
     labelLarge = TextStyle(
         fontFamily = RobotoSerif,
         fontWeight = FontWeight.Bold,
-        fontSize = 24.sp
+        fontSize = 20.sp
     ),
     labelMedium = TextStyle(
         fontFamily = RobotoSerif,
         fontWeight = FontWeight.Bold,
-        fontSize = 20.sp
+        fontSize = 14.sp
     ),
     displaySmall = TextStyle(
         fontFamily = RobotoSerif,
         fontWeight = FontWeight.Bold,
         fontStyle = FontStyle.Italic,
-        fontSize = 20.sp
+        fontSize = 16.sp
     ),
 )
