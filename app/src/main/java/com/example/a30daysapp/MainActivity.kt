@@ -69,7 +69,7 @@ fun TopAppBar(modifier: Modifier = Modifier){
             .background(MaterialTheme.colorScheme.background)
     ) {
         Text(
-            text = "30 Days of health dinners",
+            text = stringResource(id = R.string.top_bar),
             style = MaterialTheme.typography.labelLarge,
             modifier = Modifier
                 .fillMaxWidth()
@@ -104,10 +104,12 @@ fun DinnerCard(dinnerInfo: Dinner, modifier: Modifier = Modifier){
         Column (
             modifier = Modifier
                 .padding(start = 16.dp, end = 16.dp, bottom = 16.dp, top = 4.dp)
-                .animateContentSize(animationSpec = spring(
-                    dampingRatio = Spring.DampingRatioMediumBouncy,
-                    stiffness = Spring.StiffnessMedium
-                ))
+                .animateContentSize(
+                    animationSpec = spring(
+                        dampingRatio = Spring.DampingRatioMediumBouncy,
+                        stiffness = Spring.StiffnessMedium
+                    )
+                )
         ){
             Text(
                 text = "Day ${stringResource(id = dinnerInfo.day)}",
@@ -123,7 +125,7 @@ fun DinnerCard(dinnerInfo: Dinner, modifier: Modifier = Modifier){
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(dimensionResource(id = R.dimen.image_height))
-                    .clickable { expanded = !expanded}
+                    .clickable { expanded = !expanded }
                     .clip(MaterialTheme.shapes.small),
                 contentScale = ContentScale.Crop
             )
