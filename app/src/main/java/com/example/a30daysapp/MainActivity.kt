@@ -110,6 +110,7 @@ fun DinnerCard(dinnerInfo: Dinner, modifier: Modifier = Modifier){
                         stiffness = Spring.StiffnessMedium
                     )
                 )
+                .clickable { expanded = !expanded }
         ){
             Text(
                 text = "Day ${stringResource(id = dinnerInfo.day)}",
@@ -125,7 +126,6 @@ fun DinnerCard(dinnerInfo: Dinner, modifier: Modifier = Modifier){
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(dimensionResource(id = R.dimen.image_height))
-                    .clickable { expanded = !expanded }
                     .clip(MaterialTheme.shapes.small),
                 contentScale = ContentScale.Crop
             )
